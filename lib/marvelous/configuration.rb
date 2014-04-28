@@ -34,6 +34,7 @@ module Marvelous
       BASE_URL
     end
 
+    # Base params required to authenticate requests to the the Marvel API
     def base_params
       "api_key=#{public_key}&ts=#{timestamp}&hash=#{digest}"
     end
